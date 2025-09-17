@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        /* Gradiente principal cambiado a azul marino */
+        .gradient-bg { background: linear-gradient(135deg, #0b3d91 0%, #071b3a 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .skill-bar { transition: width 2s ease-in-out; }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <img src="assets/logoJA.png" alt="Logo" class="h-10">
+                    <a href="#inicio" class="text-gray-600 hover:text-blue-900 transition-colors">Inicio</a>
+                    <a href="#sobre-mi" class="text-gray-600 hover:text-blue-900 transition-colors">Sobre Mí</a>
+                    <a href="#proyectos" class="text-gray-600 hover:text-blue-900 transition-colors">Proyectos</a>
+                    <a href="#habilidades" class="text-gray-600 hover:text-blue-900 transition-colors">Habilidades</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-blue-900 transition-colors">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="gradient-bg min-h-screen flex items-center justify-center text-white">
+        <div class="text-center px-6">
+            <div class="w-32 h-32 mx-auto mb-8 bg-white/20 rounded-full flex items-center justify-center overflow-hidden">
+                <img src="assets/unnamed.jpg" alt="Foto de Juan" class="w-full h-full object-cover rounded-full">
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">Hola, soy Juan!</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 fade-in">CFGS Desarrollo De Aplicaciones Multiplataforma</p>
+            <p class="text-lg mb-12 max-w-2xl mx-auto opacity-80 fade-in">    Soy Juan de 22 años. Apasionado por la tecnología y el desarrollo, disfruto aprender, crear y ayudar a que la vida sea más fácil y creativa a través del software.</p>
+            <div class="space-x-4 fade-in">
+                <a href="#proyectos" class="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">Ver Proyectos</a>
+                <a href="#contacto" class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-900 transition-colors">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Sobre Mí</h2>
+                <div class="w-20 h-1 bg-blue-900 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="w-80 h-80 mx-auto bg-gradient-to-br from-blue-900 to-sky-700 rounded-2xl flex items-center justify-center">
+                        <img class="w-32 h-32 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <img src="assets/sobremi.jpg" alt="CRM Autoescuela portada"/>
+                        </img>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Hola!!!</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Soy un joven de 22 años formado en desarrollo de aplicaciones multiplataforma en Prat Educació. Me apasiona crear soluciones digitales seguras y eficientes, aplicando buenas prácticas de usabilidad, calidad y diseño UX. Trabajo con tecnologías como Java, MySQL, CSS y frameworks modernos, siempre buscando la excelencia en cada proyecto.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Disfruto enfrentar retos, aprender y colaborar en equipo. Mi objetivo es transformar ideas en aplicaciones útiles que faciliten la vida de las personas y aporten valor real, combinando creatividad, responsabilidad y pasión por la tecnología.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-2xl font-bold text-blue-900">100%</div>
+                            <div class="text-sm text-gray-600">Actitud</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-2xl font-bold text-blue-900">110%</div>
+                            <div class="text-sm text-gray-600">Compromiso</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Mis Proyectos</h2>
+                <div class="w-20 h-1 bg-blue-900 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Una selección de mis trabajos más destacados que demuestran mi experiencia y creatividad.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-60 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
+                        <img src="assets/tradesim.png" alt="Tradesim portada"
+                             class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Tradesim</h3>
+                        <p class="text-gray-600 mb-4">Aplicación para gestionar compras en el mercado de acciones. Desarrollada con React, Django, Reflex y SQLite.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 text-sm rounded-full">Django</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 text-sm rounded-full">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- QuickVentory -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-60 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                        <img src="assets/quickventory.png" alt="QuickVentory portada"
+                             class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">QuickVentory</h3>
+                        <p class="text-gray-600 mb-4">Sistema de gestión de inventario desarrollado en React.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">React</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- SpaceInvaders -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-60 bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center">
+                        <img src="assets/spaceinvaders.png" alt="SpaceInvaders portada"
+                             class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Juego SpaceInvaders</h3>
+                        <p class="text-gray-600 mb-4">Videojuego clásico desarrollado en Java, HTML, CSS y Firebase.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 text-sm rounded-full">Java</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">HTML/CSS</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 text-sm rounded-full">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- CRM Autoescuela con imagen portada -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-60 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
+                        <img src="assets/autoescuela.png" alt="CRM Autoescuela portada"
+                             class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">CRM Autoescuela</h3>
+                        <p class="text-gray-600 mb-4">Sistema de gestión de alumnos y profesores para autoescuelas. CRUD en Python con Backbone, SQLite y Django.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-green-100 text-green-600 text-sm rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 text-sm rounded-full">Django</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">SQLite</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">Backbone</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- MarketPlace -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-60 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
+                        <img src="assets/marketplace.png" alt="CRM Autoescuela portada"
+                            class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">MarketPlace Electrónica</h3>
+                        <p class="text-gray-600 mb-4">Sitio web para venta de productos electrónicos, desarrollado en React y Firebase.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 text-sm rounded-full">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Diseños Blender en Unity -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-64 bg-gradient-to-br from-cyan-400 to-indigo-500 flex items-center justify-center">
+                        <img src="assets/blender4.png" alt="Diseño Blender portada"
+                             class="max-h-40 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Diseños Blender en Unity</h3>
+                        <p class="text-gray-600 mb-4">Modelado y diseño 3D en Blender integrados en proyectos Unity.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 text-sm rounded-full">Blender</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">Unity</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- CRM Empresas -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-60 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
+                        <img src="assets/crm.png" alt="CRM Autoescuela portada"
+                            class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">CRM-EMP</h3>
+                        <p class="text-gray-600 mb-4">Sistema de gestión para empresas, desarrollado en PyCharm con Python y Tkinter.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-green-100 text-green-600 text-sm rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">Tkinter</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">PyCharm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Habilidades</h2>
+                <div class="w-20 h-1 bg-blue-900 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tecnologías y herramientas que domino para crear soluciones excepcionales.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-8">Frontend</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">JavaScript/TypeScript</span>
+                                <span class="text-gray-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-blue-900 h-2 rounded-full" style="width: 0%" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">React/Vue.js</span>
+                                <span class="text-gray-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 0%" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">CSS/Tailwind</span>
+                                <span class="text-gray-600">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-green-600 h-2 rounded-full" style="width: 0%" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-8">Backend & Herramientas</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Node.js/Python</span>
+                                <span class="text-gray-600">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-yellow-600 h-2 rounded-full" style="width: 0%" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Bases de Datos</span>
+                                <span class="text-gray-600">55%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-red-600 h-2 rounded-full" style="width: 0%" data-width="55%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Git/DevOps</span>
+                                <span class="text-gray-600">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-indigo-600 h-2 rounded-full" style="width: 0%" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold mb-4">¡Trabajemos Juntos!</h2>
+                <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
+                <p class="text-xl opacity-90">Aqui te dejo mi informacion para cualquier solicitud :) 
+                ¿Tienes un proyecto en mente? Me encantaría escuchar tus ideas.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-6">Información de Contacto</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20,4H4C2.9,4 2,4.9 2,6V18C2,19.1 2.9,20 4,20H20C21.1,20 22,19.1 22,18V6C22,4.9 21.1,4 20,4ZM20,8L12,13L4,8V6L12,11L20,6V8Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium">Email</p>
+                                <p class="opacity-80">aguinagajuanes2003@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium">Ubicación</p>
+                                <p class="opacity-80">Barcelona, España</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium">LinkedIn</p>
+                                <p class="opacity-80">www.linkedin.com/in/juanAgui512a98249</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p>&copy; 2024 JuanAgui. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animaciones al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    if (entry.target.querySelector('.skill-bar')) {
+                        const skillBars = entry.target.querySelectorAll('.skill-bar');
+                        skillBars.forEach(bar => {
+                            setTimeout(() => {
+                                bar.style.width = bar.getAttribute('data-width');
+                            }, 500);
+                        });
+                    }
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Formulario de contacto (solo animación)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const button = this.querySelector('button');
+            const originalText = button.textContent;
+            button.textContent = 'Enviando...';
+            button.disabled = true;
+            setTimeout(() => {
+                button.textContent = '¡Mensaje Enviado!';
+                button.classList.add('bg-green-500');
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    button.classList.remove('bg-green-500');
+                    this.reset();
+                }, 2000);
+            }, 1500);
+        });
+
+        // Inicializar animaciones en elementos visibles
+        setTimeout(() => {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    el.classList.add('visible');
+                }
+            });
+        }, 100);
+    </script>
+</body>
+</html>
