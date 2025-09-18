@@ -33,21 +33,29 @@
         </div>
     </nav>
 
-    <!-- Sección Hero -->
-    <section id="inicio" class="gradient-bg min-h-screen flex items-center justify-center text-white">
-        <div class="text-center px-6">
+    <!-- Sección Hero Ajustada -->
+    <section id="inicio" class="gradient-bg min-h-screen text-white pt-40 pb-20">
+        <div class="text-center px-6 max-w-3xl mx-auto">
+            <!-- Foto de perfil -->
             <div class="w-32 h-32 mx-auto mb-8 bg-white/20 rounded-full flex items-center justify-center overflow-hidden">
                 <img src="assets/unnamed.jpg" alt="Foto de Juan" class="w-full h-full object-cover rounded-full">
             </div>
+
+            <!-- Título y descripción -->
             <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">Hola, soy Juan!</h1>
             <p class="text-xl md:text-2xl mb-8 opacity-90 fade-in">CFGS Desarrollo De Aplicaciones Multiplataforma</p>
-            <p class="text-lg mb-12 max-w-2xl mx-auto opacity-80 fade-in">    Soy Juan de 22 años. Apasionado por la tecnología y el desarrollo, disfruto aprender, crear y ayudar a que la vida sea más fácil y creativa a través del software.</p>
-            <div class="space-x-4 fade-in">
+            <p class="text-lg mb-12 max-w-2xl mx-auto opacity-80 fade-in">
+                Soy Juan de 22 años. Apasionado por la tecnología y el desarrollo, disfruto aprender, crear y ayudar a que la vida sea más fácil y creativa a través del software.
+            </p>
+
+            <!-- Botones centrados -->
+            <div class="flex justify-center gap-4 fade-in">
                 <a href="#proyectos" class="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">Ver Proyectos</a>
                 <a href="#contacto" class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-900 transition-colors">Contactar</a>
             </div>
         </div>
     </section>
+
 
     <!-- Sobre Mi -->
     <section id="sobre-mi" class="py-20 bg-white">
@@ -87,7 +95,7 @@
         </div>
     </section>
 
-    <!-- Proyectos -->
+   <!-- Proyectos -->
     <section id="proyectos" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16 fade-in">
@@ -96,12 +104,13 @@
                 <p class="text-gray-600 max-w-2xl mx-auto">Una selección de mis trabajos más destacados que demuestran mi experiencia y creatividad.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                <!-- Tradesim -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in flex flex-col">
                     <div class="h-60 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
                         <img src="assets/tradesim.png" alt="Tradesim portada"
-                             class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                            class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Tradesim</h3>
                         <p class="text-gray-600 mb-4">Aplicación para gestionar compras en el mercado de acciones. Desarrollada con React, Django, Reflex y SQLite.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
@@ -110,28 +119,38 @@
                             <span class="px-3 py-1 bg-purple-100 text-purple-600 text-sm rounded-full">SQLite</span>
                         </div>
                     </div>
+                    <div class="p-4 flex gap-2">
+                        <a href="https://drive.google.com/drive/folders/14j8zi-fH9vlZiUD1nEwvZON48V-dajc1?usp=sharing" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-lg text-sm transition">Drive</a>
+                        <a href="https://github.com/pramos-m/TradeSim" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-3 py-1 rounded-lg text-sm transition">GitHub</a>
+                    </div>
                 </div>
+
                 <!-- QuickVentory -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in flex flex-col">
                     <div class="h-60 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
                         <img src="assets/quickventory.png" alt="QuickVentory portada"
-                             class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                            class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">QuickVentory</h3>
                         <p class="text-gray-600 mb-4">Sistema de gestión de inventario desarrollado en React.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">React</span>
                         </div>
                     </div>
+                    <div class="p-4 flex gap-2">
+                        <a href="https://drive.google.com/drive/folders/14j8zi-fH9vlZiUD1nEwvZON48V-dajc1?usp=sharing" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-lg text-sm transition">Drive</a>
+                        <a href="https://github.com/jea022?tab=repositories" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-3 py-1 rounded-lg text-sm transition">GitHub</a>
+                    </div>
                 </div>
+
                 <!-- SpaceInvaders -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in flex flex-col">
                     <div class="h-60 bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center">
                         <img src="assets/spaceInvaders.png" alt="SpaceInvaders portada"
-                             class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                            class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Juego SpaceInvaders</h3>
                         <p class="text-gray-600 mb-4">Videojuego clásico desarrollado en Java, HTML, CSS y Firebase.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
@@ -140,14 +159,18 @@
                             <span class="px-3 py-1 bg-orange-100 text-orange-600 text-sm rounded-full">Firebase</span>
                         </div>
                     </div>
+                    <div class="p-4 flex gap-2">
+                        <a href="https://github.com/jea022?tab=repositories" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-3 py-1 rounded-lg text-sm transition">GitHub</a>
+                    </div>
                 </div>
+
                 <!-- CRM Autoescuela -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in flex flex-col">
                     <div class="h-60 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
                         <img src="assets/autoescuela.png" 
-                             class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                            class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">CRM Autoescuela</h3>
                         <p class="text-gray-600 mb-4">Sistema de gestión de alumnos y profesores para autoescuelas. CRUD en Python con Backbone, SQLite y Django.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
@@ -157,14 +180,19 @@
                             <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">Backbone</span>
                         </div>
                     </div>
+                    <div class="p-4 flex gap-2">
+                        <a href="https://drive.google.com/drive/folders/14j8zi-fH9vlZiUD1nEwvZON48V-dajc1?usp=sharing" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-lg text-sm transition">Drive</a>
+                        <a href="https://github.com/jea022?tab=repositories" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-3 py-1 rounded-lg text-sm transition">GitHub</a>
+                    </div>
                 </div>
-                <!-- MarketPlace -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+
+                <!-- MarketPlace Electrónica -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in flex flex-col">
                     <div class="h-60 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
-                        <img src="assets/marketplace.png" alt="CRM Autoescuela portada"
+                        <img src="assets/marketplace.png" alt="MarketPlace portada"
                             class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">MarketPlace Electrónica</h3>
                         <p class="text-gray-600 mb-4">Sitio web para venta de productos electrónicos, desarrollado en React y Firebase.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
@@ -172,14 +200,18 @@
                             <span class="px-3 py-1 bg-orange-100 text-orange-600 text-sm rounded-full">Firebase</span>
                         </div>
                     </div>
+                    <div class="p-4 flex gap-2">
+                        <a href="https://github.com/jea022?tab=repositories" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-3 py-1 rounded-lg text-sm transition">GitHub</a>
+                    </div>
                 </div>
+
                 <!-- Diseños Blender en Unity -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in flex flex-col">
                     <div class="h-64 bg-gradient-to-br from-cyan-400 to-indigo-500 flex items-center justify-center">
                         <img src="assets/blender4.png" alt="Diseño Blender portada"
-                             class="max-h-40 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
+                            class="max-h-40 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Diseños Blender para Unity</h3>
                         <p class="text-gray-600 mb-4">Modelado y diseño 3D en Blender integrados en proyectos Unity.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
@@ -187,14 +219,18 @@
                             <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">Unity</span>
                         </div>
                     </div>
+                    <div class="p-4 flex gap-2">
+                        <a href="https://drive.google.com/drive/folders/14j8zi-fH9vlZiUD1nEwvZON48V-dajc1?usp=sharing" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-lg text-sm transition">Drive</a>
+                    </div>
                 </div>
-                <!-- CRM Empresas -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in">
+
+                <!-- CRM-EMP -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover fade-in flex flex-col">
                     <div class="h-60 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
-                        <img src="assets/crm.png" alt="CRM Autoescuela portada"
+                        <img src="assets/crm.png" alt="CRM-EMP portada"
                             class="max-h-36 max-w-full object-contain rounded-xl bg-gray-100 shadow-md">
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">CRM-EMP</h3>
                         <p class="text-gray-600 mb-4">Sistema de gestión para empresas, desarrollado en PyCharm con Python y Tkinter.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
@@ -202,6 +238,9 @@
                             <span class="px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full">Tkinter</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">PyCharm</span>
                         </div>
+                    </div>
+                    <div class="p-4 flex gap-2">
+                        <a href="https://github.com/jea022?tab=repositories" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-3 py-1 rounded-lg text-sm transition">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -328,7 +367,11 @@
                             </div>
                             <div>
                                 <p class="font-medium">LinkedIn</p>
-                                <p class="opacity-80">www.linkedin.com/in/juanAgui512a98249</p>
+                                <p class="opacity-80">
+                                    <a href="https://www.linkedin.com/in/juanAgui512a98249" target="_blank" class="text-white opacity-80 hover:opacity-100">
+                                        www.linkedin.com/in/juanAgui512a98249
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
